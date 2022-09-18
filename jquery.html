@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#div1").empty();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="div1"
+      style="
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: lightgreen;
+      "
+    >
+      <p>Content1</p>
+      <p>Content2</p>
+    </div>
+    <br /><button>Empty Demo</button>
+  </body>
+</html>

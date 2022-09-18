@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Tutorial</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: right;
+            
+        }
+        .container{
+            height: 544px; 
+            width: 100%;
+            border: 2px solid black;
+            display: flex; /* Initialize the container as a flex box */
+            
+            /* Flex properties for a flex container */
+
+            /* flex-direction: row; (Default value of flex-direction is row) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            
+
+            /* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+            /* flex-wrap: wrap-reverse; */
+
+            /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+            /* flex-flow: row-reverse wrap; */ 
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* justify-content will justify the content in vertical direction */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */ 
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 3px;
+            overflow: auto;
+           
+        }
+
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+             flex-grow: 2;
+            flex-shrink: 2; 
+
+        }
+        #item-2{
+             flex-grow: 3;
+           flex-shrink: 3 ;
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* flex: 2 2 230px; */
+            /* align-self: flex-start;
+            align-self: flex-end;
+            align-self: auto; */
+            flex-grow: 4;
+            flex-shrink: 2; 
+
+            }
+
+    </style>
+</head>
+<body>
+    <h1>OUR MENU</h1>
+    <!-- <header>OUR MENU</header> -->
+    <div class="container">
+        <div class="item" id="item-1">
+           <h2>Chicken</h2>
+               
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laudantium, placeat numquam distinctio suscipit consequuntur harum omnis. Natus nobis ipsa voluptatem quidem minus voluptas omnis hic, cumque doloremque iusto aliquam ipsam cupiditate nemo quo placeat!
+
+        </div>
+        <div class="item" id="item-2">
+            <h2>
+                Beef
+            </h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe, possimus aperiam dolorem sapiente qui. Ex inventore exercitationem sint placeat repudiandae dolore quos molestias illo. Id dicta veritatis a? Asperiores optio ex dolores tempora in.
+
+        </div>
+        <div class="item" id="item-3">
+           <h2>
+               Sushi
+           </h2> 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam ex magnam earum dolorum tenetur consectetur cupiditate aperiam dolorem, impedit quasi quia laudantium fugit facilis ipsa possimus porro debitis veritatis animi. Distinctio cumque temporibus autem!
+        </div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

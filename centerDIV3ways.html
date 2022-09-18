@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>3 Ways To Center a div in another div</title>
+      <style>
+            *{ 
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .parent_div{
+                  background: aqua;
+                  width: 100vw;
+                  height: 100vh;
+                  /* 1st METHOD */
+                  /* position: relative; */
+                  /* 2nd METHOD */
+                  /* display: flex;
+                  align-items: center;
+                  justify-content: center; */
+                  /* 3rd METHOD */
+                  display: grid;
+                  place-items: center;
+
+            }
+            .child_div{
+            width: 60vw;
+            height: 60vh;
+            background-color:green ;
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            transform:translate(-50%,-50%) ; */
+            }
+      </style>
+</head>
+<body>
+    <div class="parent_div">
+          <div class="child_div">
+
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "1npm",
+  "version": "1.0.0",
+  "description": "This is best pakage built by someone ",
+  "main": "1npm.js",
+  "scripts": {
+    "test": "awesome"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "arun",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
